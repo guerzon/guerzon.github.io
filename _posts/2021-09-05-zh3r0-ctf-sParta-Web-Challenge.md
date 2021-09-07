@@ -9,7 +9,7 @@ tags:
   - application security
   - NodeJS
 ---
-TL;DR: The challenge had an archive file which contained the source code for a NodeJS application and a Dockerfile. Running docker build invokes npm commands, which revealed a clue which led to finding out the application was vulnerable to insecure deseralization. The malicious input was sent via a cookie called "guest" which led into an RCE and the eventual capture of the challenge's flag.
+TL;DR: The challenge had an archive file which contained the source code for a NodeJS application and a Dockerfile. Running docker build invokes npm commands, which revealed a clue which led to finding out the application was vulnerable to [Insecure Deserialization](https://owasp.org/www-project-top-ten/2017/A8_2017-Insecure_Deserialization). The malicious input was sent via a cookie called "guest" which led into an RCE and the eventual capture of the challenge's flag.
 
 ## Quick disclaimer
 
