@@ -2,7 +2,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark"
 email: me@pidnull.io
 description: >-
-  Penetration testing, application security, reverse engineering,
+  Application security, reverse engineering, penetration testing,
   HackTheBox and CTF writeups by a hacker wannabe.
 baseurl: ""
 url: "https://pidnull.io"
