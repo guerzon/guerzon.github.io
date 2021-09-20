@@ -26,3 +26,4 @@ Welcome to my journal for my #365daysofhacking journey.
   - Overwhelmingly huge scope of the bug class
   - Previous and ongoing work, tools, and projects to protect against XSS
   - Definitely agree on the point that people who apply patches and fixes against vulnerabilities should be recognized too!
+- Day: 10 - [Computer Systems - A Programmer's Perspective 6th Edition](https://csapp.cs.cmu.edu) by Bryant and O'Hallaron, Chapter 1: A Tour of Computer Systems
