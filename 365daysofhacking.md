@@ -29,3 +29,5 @@ Welcome to my journal for my #365daysofhacking journey.
 - Day: 10
   - [Computer Systems - A Programmer's Perspective 6th Edition](https://csapp.cs.cmu.edu) by Bryant and O'Hallaron, Chapter 1: A Tour of Computer Systems
   - [Forest](https://www.hackthebox.eu/achievement/machine/429896/212) - Great HackTheBox machine on Windows and Active Directory, ASREPRoast Attack, DCSync Attack, and exposure to various tools (BloodHound for AD enumeration, PowerView, Impacket).
+- Day: 11
+  - OSCP preparations - Penetration Testing with Kali Linux Labs: Completed `Alpha`.
