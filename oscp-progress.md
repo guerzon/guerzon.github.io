@@ -1,15 +1,21 @@
 ---
-title: "My OSCP progress"
+title: "OSCP progress"
 layout: single
 author_profile: true
-permalink: /goal-oscp
+permalink: /oscp-progress
 ---
 
-Curious about my OSCP journey? I will share as much information as I can on my progress below.
+Are you interested with my OSCP journey? Below, I share my study progress.
+
+## PEN-200 | Penetration Testing with Kali Linux materials
+
+Status: Completed July 2021.
 
 ## PEN-200 | Penetration Testing with Kali Linux Labs
 
-Note that only machines published in the [PEN-200 Labs Learning Path](https://help.offensive-security.com/hc/en-us/articles/360050473812-PEN-200-Labs-Learning-Path) will be named.
+Below is my progress on the PWK Labs.
+
+Of course, only machines published in the [PEN-200 Labs Learning Path](https://help.offensive-security.com/hc/en-us/articles/360050473812-PEN-200-Labs-Learning-Path) will be named.
 
 |Machine|Platform|Status|
 |---|---|---|
@@ -38,28 +44,28 @@ Here is the status of my progress in completing the OSCP-like machines (new list
 
 |Machine|Difficulty|Platform|Status|Notes|
 |---|---|---|---|---|
-|Lame|Easy|![](assets/images/tux.png)|Completed||
-|Shocker|Easy|![](assets/images/tux.png)|Completed||
-|Bashed|Easy|![](assets/images/tux.png)|Completed||
-|Nibbles|Easy|![](assets/images/tux.png)|Completed||
-|Beep|Easy|![](assets/images/tux.png)|Completed||
+|Lame|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/1)||
+|Shocker|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/108)||
+|Bashed|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/118)||
+|Nibbles|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/121)||
+|Beep|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/5)||
 |Sense|Easy|![](assets/images/tux.png)|||
-|Valentine|Easy|![](assets/images/tux.png)|Completed||
+|Valentine|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/127)||
 |Sunday|Easy|![](assets/images/tux.png)|||
-|Irked|Easy|![](assets/images/tux.png)|Completed||
-|Friendzone|Easy|![](assets/images/tux.png)|Completed||
+|Irked|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/163)||
+|Friendzone|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/173)||
 |Legacy|Easy|![](assets/images/windows.ico)|||
-|Blue|Easy|![](assets/images/windows.ico)|Completed||
+|Blue|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/51)||
 |Devel|Easy|![](assets/images/windows.ico)|||
 |Optimum|Easy|![](assets/images/windows.ico)|||
 |Granny|Easy|![](assets/images/windows.ico)|||
 |Arctic|Easy|![](assets/images/windows.ico)|||
 |Grandpa|Easy|![](assets/images/windows.ico)|||
 |Bounty|Easy|![](assets/images/windows.ico)|||
-|Jerry|Easy|![](assets/images/windows.ico)|Completed||
-|Cronos|Medium|![](assets/images/tux.png)|Completed||
-|Niniveh|Medium|![](assets/images/tux.png)|Completed||
-|SolidState|Medium|![](assets/images/tux.png)|Completed|See my [writeup](https://www.pidnull.io/2021/09/04/HackTheBox_SolidState(Medium).html)|
+|Jerry|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/144)||
+|Cronos|Medium|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/11)||
+|Niniveh|Medium|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/54)||
+|SolidState|Medium|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/85)|See my [writeup](https://www.pidnull.io/2021/09/04/HackTheBox_SolidState(Medium).html)|
 |Node|Medium|![](assets/images/tux.png)|||
 |Poison|Medium|![](assets/images/tux.png)|||
 |Tartarsauce|Medium|![](assets/images/tux.png)|||
@@ -69,7 +75,7 @@ Here is the status of my progress in completing the OSCP-like machines (new list
 |Conceal|Hard|![](assets/images/windows.ico)|||
 |Brainfuck|Insane|![](assets/images/tux.png)|||
 |Additional machines|
-|Netmon|Easy|![](assets/images/windows.ico)|Completed||
+|Netmon|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/177)||
 |Active|Easy|![](assets/images/windows.ico)|||
 |LaCasaDePapel|Easy|![](assets/images/windows.ico)|||
 |Jeeves|Medium|![](assets/images/windows.ico)|||
