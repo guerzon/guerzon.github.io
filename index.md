@@ -7,4 +7,10 @@ author_profile: true
 
 ---
 
+Follow my progress for my [OSCP](/goal-oscp) goal.
+
+---
+
 Follow my [#365daysofhacking](/365daysofhacking) journey.
+
+---
