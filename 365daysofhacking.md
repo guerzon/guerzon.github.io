@@ -34,3 +34,11 @@ Welcome to my journal for my #365daysofhacking journey.
 - Day: 12
   - [OSCP preps] Penetration Testing with Kali Linux Labs: rooted `Beta`
   - [OSCP preps] Penetration Testing with Kali Linux Labs: rooted `Alice`
+- Day: 13
+  - TryHackMe: Completed room [Post-Exploitation Basics](https://tryhackme.com/room/postexploit)
+  - [OSCP preps] Post-exploitation on PWK Lab `Alice`.
+- Day: 14
+  - [OSCP preps] Penetration Testing with Kali Linux Labs: rooted `Disco`
+- Day 15:
+  - [Beginners Guide to 0day/CVE AppSec Research](https://0xboku.com/2021/09/14/0dayappsecBeginnerGuide.html) by [Bobby Coke](https://twitter.com/0xBoku)
+  - Computer Systems - A Programmer's Perspective 6E: Chapter 2.1
