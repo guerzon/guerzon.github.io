@@ -42,3 +42,6 @@ Welcome to my journal for my #365daysofhacking journey.
 - Day 15:
   - [Beginners Guide to 0day/CVE AppSec Research](https://0xboku.com/2021/09/14/0dayappsecBeginnerGuide.html) by [Bobby Coke](https://twitter.com/0xBoku)
   - Computer Systems - A Programmer's Perspective 6E: Chapter 2.1
+- Day: 16:
+  - Readings on vulnerability research and responsible disclosure
+  - 15-213 Introduction to Computer Systems - Lecture 1: Overview
