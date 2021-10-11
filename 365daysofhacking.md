@@ -67,3 +67,9 @@ Welcome to my journal for my #365daysofhacking journey, a trend in the infosec c
   - Darknet Diaries ep. 30: [Schmoon](https://darknetdiaries.com/episode/30/), story of the Schmoon virus used in the 2012 hack against Saudi Aramco.
   - Darknet Diaries ep. 33: [RockYou](https://darknetdiaries.com/episode/33/), story of where `rockyou.txt` came from!
   - Discovering [Phrack](http://phrack.org/issues/70/1.html)
+- Day: 21
+  - [Digital Overdose - Autumn CTF 2021](https://digitaloverdose.tech/ctf/2021-autumn) - Day 1
+- Day: 22
+  - [Digital Overdose - Autumn CTF 2021](https://digitaloverdose.tech/ctf/2021-autumn) - Day 2
+  - Darknet Diaries ep. 35: [Carbanak](https://darknetdiaries.com/episode/35/), story of the [Carbanak](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/carbanak-backdoor-s-source-code-leaked-what-this-means-for-enterprises) banking malware.
+  - Participated in [pbctf 2021](https://ctf.perfect.blue/).
