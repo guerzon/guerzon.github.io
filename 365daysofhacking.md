@@ -73,3 +73,11 @@ Welcome to my journal for my #365daysofhacking journey, a trend in the infosec c
   - [Digital Overdose - Autumn CTF 2021](https://digitaloverdose.tech/ctf/2021-autumn) - Day 2
   - Darknet Diaries ep. 35: [Carbanak](https://darknetdiaries.com/episode/35/), story of the [Carbanak](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/carbanak-backdoor-s-source-code-leaked-what-this-means-for-enterprises) banking malware.
   - Participated in [pbctf 2021](https://ctf.perfect.blue/).
+- Day: 23
+  - Darknet Diaries ep. 38: [Dark Caracal](https://darknetdiaries.com/episode/38/)
+  - [Digital Overdose - Autumn CTF 2021](https://digitaloverdose.tech/ctf/2021-autumn) - published my writeups:
+    - [Part 1: Hash Cracking, Log Analysis, Source Analysis, Reversing, Steg, Misc](https://www.pidnull.io/2021/10/09/DigitalOverdoseCTF-Part1.html) 
+    - [Part 2: Web](https://www.pidnull.io/2021/10/09/DigitalOverdoseCTF-Part2.html)
+- Day: 24
+  - Darknet Diaries ep. 40, 41, 42 - great stories from physical pentesters and social engineers.
+  - HackTheBox - Active Directory 101: Completed machine [Sauna](https://www.hackthebox.eu/achievement/machine/429896/229) - ASREPRoast, DCSync
