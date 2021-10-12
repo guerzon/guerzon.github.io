@@ -38,7 +38,7 @@ Of course, only machines published in the [PEN-200 Labs Learning Path](https://h
 |[redacted]|![](assets/images/windows.ico)|Not Started|
 |[TBD]|
 
-## HackTheBox OSCP-like machines
+## HackTheBox - OSCP-like machines
 
 Here is the status of my progress in completing the OSCP-like machines (new list) from [@TJ_Null](https://twitter.com/tj_null/status/1162419643283333120).
 
@@ -86,5 +86,21 @@ Here is the status of my progress in completing the OSCP-like machines (new list
 |Tally|Hard|![](assets/images/windows.ico)|||
 |Falafel|Hard|![](assets/images/windows.ico)|||
 |Jail|Insane|![](assets/images/windows.ico)|||
+
+
+## HackTheBox - Active Directory 101
+
+|Machine|Difficulty|Platform|Status|Notes|
+|---|---|---|---|---|
+|Forest|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/212)|ASREPRoast, DCSync|
+|Sauna|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/229)|ASREPRoast, DCSync|
+|Active|Easy|![](assets/images/windows.ico)|||
+|Blackfield|Hard|![](assets/images/windows.ico)|||
+|Resolute|Medium|![](assets/images/windows.ico)|||
+|Reel|Hard|![](assets/images/windows.ico)|||
+|Sizzle|Insane|![](assets/images/windows.ico)|||
+|Mantis|Hard|![](assets/images/windows.ico)|||
+|Cascade|Medium|![](assets/images/windows.ico)|||
+|Multimaster|Insane|![](assets/images/windows.ico)|||
 
 ___
