@@ -94,7 +94,7 @@ Here is the status of my progress in completing the OSCP-like machines (new list
 |---|---|---|---|---|
 |Forest|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/212)|ASREPRoast, DCSync|
 |Sauna|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/229)|ASREPRoast, DCSync|
-|Active|Easy|![](assets/images/windows.ico)|||
+|Active|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/148)|Groups.xml, Kerberoasting|
 |Blackfield|Hard|![](assets/images/windows.ico)|||
 |Resolute|Medium|![](assets/images/windows.ico)|||
 |Reel|Hard|![](assets/images/windows.ico)|||
