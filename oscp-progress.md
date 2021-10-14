@@ -90,6 +90,8 @@ Here is the status of my progress in completing the OSCP-like machines (new list
 
 ## HackTheBox - Active Directory 101
 
+Active Directory exploitation labs, using HTB official walkthroughs.
+
 |Machine|Difficulty|Platform|Status|Notes|
 |---|---|---|---|---|
 |Forest|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/212)|ASREPRoast, DCSync|
