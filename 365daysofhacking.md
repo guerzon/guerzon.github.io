@@ -80,6 +80,8 @@ Welcome to my journal for my #365daysofhacking journey, a trend in the infosec c
     - [Part 2: Web](https://www.pidnull.io/2021/10/09/DigitalOverdoseCTF-Part2.html)
 - Day: 24
   - Darknet Diaries ep. 40, 41, 42 - great stories from physical pentesters and social engineers.
-  - HackTheBox - Active Directory 101: Completed machine [Sauna](https://www.hackthebox.eu/achievement/machine/429896/229) - ASREPRoast, DCSync
+  - HackTheBox - Active Directory 101: Completed machine [Sauna](https://www.hackthebox.eu/achievement/machine/429896/229) - AD,ASREPRoast, DCSync
 - Day: 25
-  - HackTheBox - Active Directory 101: Completed machine [Active](https://www.hackthebox.eu/achievement/machine/429896/148) - Groups.xml, Kerberoasting
+  - HackTheBox - Active Directory 101: Completed machine [Active](https://www.hackthebox.eu/achievement/machine/429896/148) - AD, Groups.xml, Kerberoasting
+- Day: 26
+  - HackTheBox - Active Directory 101: Completed machine [Blackfield](https://www.hackthebox.eu/achievement/machine/429896/255) - AD, ASREPRoast, Dumping LSASS and NTDS.dit, Password spraying, SeBackup/SeRestore privilege abuse
