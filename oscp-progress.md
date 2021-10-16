@@ -7,42 +7,46 @@ permalink: /oscp-progress
 
 <img src="assets/images/PWK-OSCP-badge.png" width="200" height="200" />
 
-Are you interested with my OSCP journey? Below, I share my study progress.
+Are you interested with my OSCP journey? Here is my study progress.
 
-## PEN-200 | Penetration Testing with Kali Linux materials
+---
 
-Status: Completed July 2021.
+## [COMPLETED] PEN-200 - Penetration Testing with Kali Linux materials
 
-## PEN-200 | Penetration Testing with Kali Linux Labs
+**Status**: Completed July 2021
 
-Below is my progress on the PWK Labs.
+---
 
-Of course, only machines published in the [PEN-200 Labs Learning Path](https://help.offensive-security.com/hc/en-us/articles/360050473812-PEN-200-Labs-Learning-Path) will be named.
+## [In progress] HackTheBox - Active Directory 101
 
-|Machine|Platform|Status|
-|---|---|---|
-|Alpha|![](assets/images/tux.png)|Completed|
-|Beta|![](assets/images/tux.png)|Completed|
-|Alice|![](assets/images/windows.ico)|Completed|
-|Disco|![](assets/images/windows.ico)|Completed|
-|Susie|[TBD]|In Progress|
-|Hotline|[TBD]|Not Started|
-|Chris|[TBD]|Not Started|
-|Mailman|[TBD]|Not Started|
-|XOR-APP59|[TBD]|Not Started|
-|Sean|[TBD]|Not Started|
-|Bethany|[TBD]|Not Started|
-|[redacted]|![](assets/images/windows.ico)|In Progress|
-|[redacted]|![](assets/images/tux.png)|Completed|
-|[redacted]|![](assets/images/windows.ico)|In Progress|
-|[redacted]|![](assets/images/windows.ico)|Not Started|
-|[redacted]|![](assets/images/windows.ico)|Not Started|
-|[redacted]|![](assets/images/windows.ico)|Not Started|
-|[TBD]|
+**Description**: Active Directory exploitation labs, using HTB official walkthroughs.
 
-## HackTheBox - OSCP-like machines
+**Timeline**: October 2021
 
-Here is the status of my progress in completing the OSCP-like machines (new list) from [@TJ_Null](https://twitter.com/tj_null/status/1162419643283333120).
+**Status**
+
+|Machine|Difficulty|Platform|Status|Notes|
+|---|---|---|---|---|
+|Forest|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/212)|ASREPRoast, DCSync|
+|Sauna|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/229)|ASREPRoast, DCSync|
+|Active|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/148)|Groups.xml, Kerberoasting|
+|Blackfield|Hard|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/255)|ASREPRoas, Dumping LSASS and NTDS.dit,Password spraying, SeBackup and SeRestore privilege abuse|
+|Resolute|Medium|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/220)|Active Directory, LDAP anonymous bind, PowerShell Transcription logging, DnsAdmins privileged group abuse|
+|Reel|Hard|![](assets/images/windows.ico)|||
+|Sizzle|Insane|![](assets/images/windows.ico)|||
+|Mantis|Hard|![](assets/images/windows.ico)|||
+|Cascade|Medium|![](assets/images/windows.ico)|||
+|Multimaster|Insane|![](assets/images/windows.ico)|||
+
+---
+
+## [In progress] HackTheBox - OSCP-like machines
+
+**Description**: Here is the status of my progress in completing the OSCP-like machines (new list) from [@TJ_Null](https://twitter.com/tj_null/status/1162419643283333120).
+
+**Timeline**: October 2021 - December 2021
+
+**Status**
 
 |Machine|Difficulty|Platform|Status|Notes|
 |---|---|---|---|---|
@@ -89,22 +93,72 @@ Here is the status of my progress in completing the OSCP-like machines (new list
 |Falafel|Hard|![](assets/images/windows.ico)|||
 |Jail|Insane|![](assets/images/windows.ico)|||
 
+---
 
-## HackTheBox - Active Directory 101
+## [Planned] Buffer Overflows
 
-Active Directory exploitation labs, using HTB official walkthroughs.
+**Timeline**: November 2021 - December 2021
 
-|Machine|Difficulty|Platform|Status|Notes|
-|---|---|---|---|---|
-|Forest|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/212)|ASREPRoast, DCSync|
-|Sauna|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/229)|ASREPRoast, DCSync|
-|Active|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/148)|Groups.xml, Kerberoasting|
-|Blackfield|Hard|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/255)|ASREPRoas, Dumping LSASS and NTDS.dit,Password spraying, SeBackup and SeRestore privilege abuse|
-|Resolute|Medium|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/220)|Active Directory, LDAP anonymous bind, PowerShell Transcription logging, DnsAdmins privileged group abuse|
-|Reel|Hard|![](assets/images/windows.ico)|||
-|Sizzle|Insane|![](assets/images/windows.ico)|||
-|Mantis|Hard|![](assets/images/windows.ico)|||
-|Cascade|Medium|![](assets/images/windows.ico)|||
-|Multimaster|Insane|![](assets/images/windows.ico)|||
+[TBD]
+
+---
+
+## [Planned] PEN-200 - Penetration Testing with Kali Linux Labs
+
+**Description**: Below is my progress on the PWK Labs. Of course, only machines published in the [PEN-200 Labs Learning Path](https://help.offensive-security.com/hc/en-us/articles/360050473812-PEN-200-Labs-Learning-Path) will be named.
+
+**Timeline**: Resume on January 2022
+
+**Status**
+
+|Machine|Platform|Status|
+|---|---|---|
+|Alpha|![](assets/images/tux.png)|Completed|
+|Beta|![](assets/images/tux.png)|Completed|
+|Alice|![](assets/images/windows.ico)|Completed|
+|Disco|![](assets/images/windows.ico)|Completed|
+|Susie|[TBD]|In Progress|
+|Hotline|[TBD]|Not Started|
+|Chris|[TBD]|Not Started|
+|Mailman|[TBD]|Not Started|
+|XOR-APP59|[TBD]|Not Started|
+|Sean|[TBD]|Not Started|
+|Bethany|[TBD]|Not Started|
+|[redacted]|![](assets/images/windows.ico)|In Progress|
+|[redacted]|![](assets/images/tux.png)|Completed|
+|[redacted]|![](assets/images/windows.ico)|In Progress|
+|[redacted]|![](assets/images/windows.ico)|Not Started|
+|[redacted]|![](assets/images/windows.ico)|Not Started|
+|[redacted]|![](assets/images/windows.ico)|Not Started|
+|[TBD]|
+
+---
+
+## [good-to-have] HackTheBox - Dante Pro Lab
+
+### Description
+
+> Dante is a modern and beginner-friendly Pro Lab that provides the opportunity to learn common penetration testing methodologies and gain familiarity with tools included in the Parrot OS Linux distribution.
+
+**Timeline**: December 2021
+
+**Status**
+
+|Machine|Platform|Status|
+|---|---|---|
+|DANTE-FW01|||
+|DANTE-ADMIN-DC02|||
+|DANTE-ADMIN-NIX05|||
+|DANTE-ADMIN-NIX06|||
+|DANTE-DC01|||
+|DANTE-NIX02|||
+|DANTE-NIX03|||
+|DANTE-NIX04|||
+|DANTE-NIX07|||
+|DANTE-SQL01|||
+|DANTE-WS01|||
+|DANTE-WS02|||
+|DANTE-WS03|||
+|DANTE-WEB-NIX01|||
 
 ___
