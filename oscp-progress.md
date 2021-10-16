@@ -100,7 +100,7 @@ Active Directory exploitation labs, using HTB official walkthroughs.
 |Sauna|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/229)|ASREPRoast, DCSync|
 |Active|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/148)|Groups.xml, Kerberoasting|
 |Blackfield|Hard|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/255)|ASREPRoas, Dumping LSASS and NTDS.dit,Password spraying, SeBackup and SeRestore privilege abuse|
-|Resolute|Medium|![](assets/images/windows.ico)|||
+|Resolute|Medium|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/220)|Active Directory, LDAP anonymous bind, PowerShell Transcription logging, DnsAdmins privileged group abuse|
 |Reel|Hard|![](assets/images/windows.ico)|||
 |Sizzle|Insane|![](assets/images/windows.ico)|||
 |Mantis|Hard|![](assets/images/windows.ico)|||
