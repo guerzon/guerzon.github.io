@@ -7,6 +7,11 @@ permalink: /365daysofhacking
 
 Welcome to my journal for my #365daysofhacking journey, a trend in the infosec community where one tries to learn something new or perform a security task for 365 days.
 
+- Day: 30
+  - HackTheBox - Completed machine [Previse](https://www.hackthebox.eu/achievement/machine/429896/373)
+- Day: 29
+  - Darknet Diaries ep. 102 [Money Maker](https://darknetdiaries.com/episode/102/).
+  - Darknet Diaries ep. 57 [ms08-067](https://darknetdiaries.com/episode/57/).
 - Day: 28
   - HackTheBox - Active Directory 101: Completed machine [Reel](https://www.hackthebox.eu/achievement/machine/429896/143) - Active Directory, Service misconfiguration (FTP, SMTP), Client-side attacks (Office), Permissions abuse, sensitive information leak
 - Day: 27
