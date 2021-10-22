@@ -7,7 +7,7 @@ permalink: /oscp-progress
 
 <img src="assets/images/PWK-OSCP-badge.png" width="200" height="200" />
 
-Are you interested with my OSCP journey? Here is my study progress.
+This is my penetration testing study tracker for my OSCP exam planned for February 2022.
 
 ---
 
