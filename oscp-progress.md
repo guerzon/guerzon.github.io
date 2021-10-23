@@ -60,7 +60,7 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 |Sunday|Easy|![](assets/images/tux.png)|||
 |Irked|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/163)||
 |Friendzone|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/173)||
-|Legacy|Easy|![](assets/images/windows.ico)|||
+|Legacy|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/2)||
 |Blue|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/51)||
 |Devel|Easy|![](assets/images/windows.ico)|||
 |Optimum|Easy|![](assets/images/windows.ico)|||
