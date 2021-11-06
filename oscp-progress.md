@@ -17,29 +17,6 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 
 ---
 
-## [In progress] HackTheBox - Active Directory 101
-
-**Description**: Active Directory exploitation labs, using HTB official walkthroughs.
-
-**Timeline**: October 2021
-
-**Status**
-
-|Machine|Difficulty|Platform|Status|Notes|
-|---|---|---|---|---|
-|Forest|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/212)|ASREPRoast, DCSync|
-|Sauna|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/229)|ASREPRoast, DCSync|
-|Active|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/148)|Groups.xml, Kerberoasting|
-|Blackfield|Hard|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/255)|ASREPRoas, Dumping LSASS and NTDS.dit,Password spraying, SeBackup and SeRestore privilege abuse|
-|Resolute|Medium|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/220)|Active Directory, LDAP anonymous bind, PowerShell Transcription logging, DnsAdmins privileged group abuse|
-|Reel|Hard|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/143)|Active Directory, Service misconfiguration (FTP, SMTP), Client-side attacks (Office), Permissions abuse, sensitive information leak|
-|Sizzle|Insane|![](assets/images/windows.ico)|||
-|Mantis|Hard|![](assets/images/windows.ico)|||
-|Cascade|Medium|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/235)|Active Directory, LDAP Enumeration, SQLite databases, RE .NET Assemblies, TightVNC Password Extraction, AES Encryption, AD Recycle Bin|
-|Multimaster|Insane|![](assets/images/windows.ico)|||
-
----
-
 ## [In progress] HackTheBox - OSCP-like machines
 
 **Description**: Here is the status of my progress in completing the OSCP-like machines (new list) from [@TJ_Null](https://twitter.com/tj_null/status/1162419643283333120).
