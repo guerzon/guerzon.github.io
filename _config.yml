@@ -2,7 +2,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark"
 email: me@pidnull.io
 description: >-
-  Application security, reverse engineering, penetration testing,
+  Application security, penetration testing, red-teaming,
   HackTheBox and CTF writeups by a hacker wannabe.
 baseurl: ""
 url: "https://pidnull.io"
@@ -41,12 +41,6 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/pidnull/"
-    - label: "HackTheBox"
-      icon: "fas fa-fw fa-cube"
-      url: "https://app.hackthebox.eu/profile/429896"
-    - label: "CTFtime"
-      icon: "fas fa-flag"
-      url: "https://ctftime.org/user/110770"
 
 # Defaults
 defaults:
