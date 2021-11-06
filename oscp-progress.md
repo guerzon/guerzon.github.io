@@ -25,7 +25,7 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 
 **Status**
 
-|Machine|Difficulty|Platform|Status|Notes|
+|Machine|Difficulty|Platform|Status|Tags|
 |---|---|---|---|---|
 |Lame|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/1)||
 |Shocker|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/108)||
@@ -39,7 +39,7 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 |Friendzone|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/173)||
 |Legacy|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/2)||
 |Blue|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/51)||
-|Devel|Easy|![](assets/images/windows.ico)|||
+|Devel|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/3)|Writeable open FTP share, IIS/ASP<br/>SeImpersonate->JuicyPotato|
 |Optimum|Easy|![](assets/images/windows.ico)|||
 |Granny|Easy|![](assets/images/windows.ico)|||
 |Arctic|Easy|![](assets/images/windows.ico)|||
