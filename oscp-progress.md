@@ -41,9 +41,9 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 |Blue|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/51)||
 |Devel|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/3)|Writeable open FTP share, IIS/ASP<br/>SeImpersonate->JuicyPotato|
 |Optimum|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/6)|Rejetto HttpFIleServer RCE<br/>MS16-098|
-|Granny|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/14)|WebDAV, outdated software, Token Kidnapping|
-|Arctic|Easy|![](assets/images/windows.ico)|||
-|Grandpa|Easy|![](assets/images/windows.ico)|[Grandpa](https://www.hackthebox.com/achievement/machine/429896/13)|WebDAV, outdated software, Token Kidnapping|
+|Granny|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/14)|WebDAV, outdated software<br/>Token Kidnapping|
+|Arctic|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/9)|Adobe ColdFusion 8, arbitrary file upload, outdated software<br/>JuicyPotato|
+|Grandpa|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/13)|WebDAV, outdated software, Token Kidnapping|
 |Bounty|Easy|![](assets/images/windows.ico)|||
 |Jerry|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/144)||
 |Cronos|Medium|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/11)||
