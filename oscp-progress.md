@@ -49,7 +49,7 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 |Cronos|Medium|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/11)||
 |Niniveh|Medium|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/54)||
 |SolidState|Medium|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/85)|See my [writeup](https://www.pidnull.io/2021/09/04/HackTheBox_SolidState(Medium).html)|
-|Node|Medium|![](assets/images/tux.png)|||
+|Node|Medium|![](assets/images/tux.png)|[Completed](https://www.hackthebox.com/achievement/machine/429896/110)|NodeJS, sensitive data leak, weak password policy, password reuse, MongoDB<br/>(1) outdated software (kernel)<br/>(2) SUID binary command injection, buffer overflow|
 |Poison|Medium|![](assets/images/tux.png)|||
 |Tartarsauce|Medium|![](assets/images/tux.png)|||
 |Silo|Medium|![](assets/images/windows.ico)|||
