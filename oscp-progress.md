@@ -82,7 +82,7 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 
 ## [Planned] PEN-200 - Penetration Testing with Kali Linux Labs
 
-**Description**: Below is my progress on the PWK Labs. Of course, only machines published in the [PEN-200 Labs Learning Path](https://help.offensive-security.com/hc/en-us/articles/360050473812-PEN-200-Labs-Learning-Path) will be named.
+**Description**: Below is my progress on the PWK Labs.
 
 **Timeline**: Resume on January 2022
 
@@ -111,7 +111,7 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 
 ---
 
-## [good-to-have] HackTheBox - Dante Pro Lab
+## HackTheBox - Dante Pro Lab
 
 ### Description
 
