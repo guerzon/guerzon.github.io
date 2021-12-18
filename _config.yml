@@ -31,7 +31,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:lester@pidnull.io"
+      url: "mailto:lester+web@pidnull.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/pidnull"
@@ -44,9 +44,6 @@ author:
     - label: "CTFtime"
       icon: "fas fa-flag"
       url: "https://ctftime.org/user/110770"
-    - label: "GPG key"
-      icon: "fas fa-key"
-      url: "https://www.pidnull.io/pgp.asc"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/guerzon"
