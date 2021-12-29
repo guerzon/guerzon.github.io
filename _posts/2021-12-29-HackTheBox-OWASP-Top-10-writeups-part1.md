@@ -1,31 +1,23 @@
 ---
-title: "HackTheBox - OWASP Top 10 Track - Challenge writeups"
-date: 2022-01-09
+title: "HackTheBox - OWASP Top 10 Track - Web challenges part 1"
+date: 2021-12-29
 layout: single
 tags:
   - web
 ---
 
-The [OWASP Top 10 Track](https://app.hackthebox.com/tracks/OWASP-Top-10) is a collection of web challenges that HTB users can follow to get hands-on experience in exploiting the most critical security risks to web applications.
+The [OWASP Top 10 Track](https://app.hackthebox.com/tracks/OWASP-Top-10) is a collection of web challenges that security students can follow to get hands-on experience in exploiting the most critical security risks to web applications.
+
+This post is part 1 of 2 of my writeups for this track, and contains the following challenges:
+
+- [looking glass](#looking-glass)
+- [sanitize](#sanitize)
+- [baby auth](#baby-auth)
+- [baby nginxatsu](#baby-nginxatsu)
 
 ## Quick disclaimer
 
 My writeups are intended to showcase my understanding of various security concepts and my thought process when solving a problem. Hopefully they would also improve my technical-writing skills, which I believe is an extremely underrated skill in the security industry. I also share some analysis of vulnerabilites and sometimes what can be done to resolve or mitigate them. These are not intended to be tutorials or expert guides.
-
-## Status
-
-|Difficulty|Challenge|Status|Category|
-|--------|----------|----------|----------|
-|Easy|[looking glass](#looking-glass)|[Done](https://www.hackthebox.com/achievement/challenge/429896/177)|Command Injection|
-|Easy|[sanitize](#sanitize)|[Done](https://www.hackthebox.com/achievement/challenge/429896/178)|SQL Injection|
-|Easy|[baby auth](#baby-auth)|[Done](https://www.hackthebox.com/achievement/challenge/429896/179)|Broken Access Control|
-|Easy|[baby nginxatsu](#baby-nginxatsu)|[Done](https://www.hackthebox.com/achievement/challenge/429896/180)|Broken Access Control (exposed storage)<br/>Sensitive Data Exposure|
-|Easy|[baby WAFfiles order](#baby-waffiles-order)|||
-|Easy|[baby todo or not todo](#baby-todo-or-not-todo)|||
-|Easy|[baby BoneChewerCon](#baby-bonechewercon)|||
-|Easy|[Full Stack Conf](#full-stack-conf)|||
-|Easy|[baby website rick](#baby-website-rick)|||
-|Easy|[baby breaking grad](#baby-breaking-grad)|||
 
 ## looking glass
 
@@ -731,14 +723,8 @@ Worked!
 **Recommendation**: All endpoints must use the same access control as much as possible.
 2. **Sensitive Data Exposure**: Database dump of the application is stored in `/storage` containing password hashes and API tokens. **Recommendation**: Even if this endpoint were authenticated, the database dump should not have been stored where the application data is stored. If there was a valid need for it to be stored there, there should be enough file protections on it, such as file encryption or storing it in a password protected archive.
 
-## baby WAFfiles order
+---
 
-## baby todo or not todo
+Come back soon for part 2! ;)
 
-## baby BoneChewerCon
-
-## baby Stack Conf
-
-## baby website rick
-
-## baby breaking grad
+\- [Lester](https://twitter.com/pidnull)
