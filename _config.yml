@@ -1,6 +1,6 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark"
-email: lesterguerzon@proton.me
+email: lester@pidnull.io
 description: >-
   Application security, penetration testing, red-teaming,
   HackTheBox and CTF writeups by a hacker wannabe.
@@ -31,7 +31,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:lesterguerzon@proton.me"
+      url: "mailto:lester@pidnull.io"
     - label: "Medium"
       icon: "fa-brands fa-medium"
       url: "https://medium.com/@pidnull"
@@ -40,7 +40,7 @@ author:
       url: "https://twitter.com/pidnull"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/pidnull/"
+      url: "https://www.linkedin.com/in/ilesterg"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/guerzon"
