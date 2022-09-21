@@ -1,8 +1,8 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "neon"
-email: lester@pidnull.io
+email: lesterguerzon@proton.me
 description: >-
-  Cybersec ramblings of a hacker wannabe trying to find his passion in life.
+  Linux, cloud, Infrastructure-as-Code, and security ramblings or a recovering sysadmin.
 baseurl: ""
 url: "https://pidnull.io"
 locale: "en-US"
@@ -25,12 +25,12 @@ plugins:
 author:
   name: "Lester Guerzon"
   avatar: "/assets/images/pidnull-avatar.png"
-  bio: "linux sysadmin • wannabe hacker"
+  bio: "linux sysadmin who loves books, languages, and cycling"
   location: "Munich"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:lester@pidnull.io"
+      url: "mailto:lesterguerzon@proton.me"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/pidnull"
@@ -40,12 +40,9 @@ author:
     - label: "HackTheBox"
       icon: "fas fa-fw fa-cube"
       url: "https://app.hackthebox.eu/profile/429896"
-    - label: "CTFtime"
-      icon: "fas fa-flag"
-      url: "https://ctftime.org/user/110770"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/ilesterg"
+      url: "https://www.linkedin.com/in/lesterguerzon"
 
 # Defaults
 defaults:
