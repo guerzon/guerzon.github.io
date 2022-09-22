@@ -1,5 +1,5 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "neon"
+minimal_mistakes_skin: "dark"
 email: lesterguerzon@proton.me
 description: >-
   Linux, cloud, Infrastructure-as-Code, and security ramblings or a recovering sysadmin.

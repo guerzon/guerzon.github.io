@@ -8,8 +8,6 @@ tags:
 
 *This is a republish from my Medium blog. Read my original single-page article [here](https://medium.com/swlh/how-to-manage-your-aws-infrastructure-with-terraform-3581b631fd9d).*
 
-# Managing your AWS Infrastructure with Terraform - Part 1
-
 ## Introduction
 
 Hashicorp Terraform is an extremely useful and flexible tool for building, changing, and versioning infrastructure safely and efficiently. It builds on the concept of Infrastructure-as-Code — managing entire infrastructures using machine-readable configuration files rather than interactive commands and configuration tools.
@@ -34,34 +32,32 @@ As an AWS best-practice, create an IAM user with *programmatic access* and the f
 - AmazonEC2FullAccess
 - AmazonS3FullAccess
 
-If you have not created an IAM user before, [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) is a useful guide you can use. At the end of the IAM user creation process, you should be presented with the following page showing the access key ID and the secret access key. Please copy these values and save them somewhere (private) because we will be using them at a later step.
+If you have not created an IAM user before, [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) is a useful guide you can use. At the end of the IAM user creation process, you should be presented with the following page showing the access key ID and the secret access key. Copy these values and save them somewhere (private) because we will be using them at a later step.
 
-For this tutorial, I have created a user called terraform-user:
+For this tutorial, I have created a user called `terraform-user`.
 
-![](https://miro.medium.com/max/4800/1*0uR6TgpQB83K5mTwS5Zbig.png)
-
-**Remember**: always keep these credentials **confidential**! Don’t worry about me, these credentials will no longer work once I publish this tutorial!
+**Remember**: always keep these credentials **confidential**!
 
 ### S3 Bucket
 
 Create an S3 Bucket which will hold our `terraform.tfstate` file. Terraform state files are explained in a later step in this guide.
 
-If you have not create an S3 bucket before, [here](https://medium.com/swlh/how-to-manage-your-aws-infrastructure-with-terraform-3581b631fd9d#:~:text=S3%20bucket%20before%2C-,here,-is%20a%20useful) is a useful guide you can use. For this tutorial, I have created an S3 bucket called `terraform-s3-bucket-testing`:
+If you have not created an S3 bucket before, [here](https://medium.com/swlh/how-to-manage-your-aws-infrastructure-with-terraform-3581b631fd9d#:~:text=S3%20bucket%20before%2C-,here,-is%20a%20useful) is a useful guide you can use. For this tutorial, I have created an S3 bucket called `terraform-s3-bucket-testing`:
 
-**Remember**: Please block ALL public access to the bucket and to all the objects within the bucket.
+**Remember**: Block ALL public access to the bucket and to all the objects within the bucket.
 
 ## Installation
 
 Now, we’re ready to install Terraform!
 
-First, open a terminal window and create a working directory for our Terraform project. Please note that for this tutorial, I am using a macOS so you might need to use other commands which correspond to your workstation.
+First, open a terminal window and create a working directory for our Terraform project. Please note that in this tutorial, I am running all commands on a macOS, so you might need to adjust commands depending on your development environment.
 
 ```bash
 mkdir ~/terraform-aws
 cd ~/terraform-aws
 ```
 
-As of writing, the latest version of Terraform command-line is 0.12.29. Installing Terraform on the following platforms are supported:
+As of writing, the latest version of Terraform command-line is `0.12.29`. Installing Terraform on the following platforms are supported:
 
 - macOS (64-bit)
 - FreeBSD (32-bit, 64-bit, and ARM)
@@ -70,7 +66,7 @@ As of writing, the latest version of Terraform command-line is 0.12.29. Installi
 - Solaris (64-bit)
 - Windows (32-bit and 64-bit)
 
-For this tutorial, I am using a macOS, so I need to download the corresponding Zip file:
+Since I am using a macOS, I need to download the corresponding Zip file:
 
 ```bash
 wget https://releases.hashicorp.com/terraform/0.12.29/terraform_0.12.29_darwin_amd64.zip
@@ -91,7 +87,7 @@ Move the binary to a location in your `$PATH`. I would suggest moving `terraform
 mv terraform /usr/local/bin
 ```
 
-Verify that the `terraform` binary is available in the current $PATH:
+Verify that the `terraform` binary is available in the current `$PATH`:
 
 ```bash
 which terraform
@@ -145,8 +141,8 @@ terraform {
 The next step is to define 2 environment variables which will contain the **access key ID** and the **secret access key** from an earlier section.
 
 ```bash
-export AWS_ACCESS_KEY_ID="AKIAUN57B3YGREQNABE4"
-export AWS_SECRET_ACCESS_KEY="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"
+export AWS_ACCESS_KEY_ID="<Access key ID here>"
+export AWS_SECRET_ACCESS_KEY="<secret access key here>"
 ```
 
 After defining our provider, the location of our S3 bucket, and the login credentials to our AWS account, we can now initialize our Terraform project using the `terraform init` command.
