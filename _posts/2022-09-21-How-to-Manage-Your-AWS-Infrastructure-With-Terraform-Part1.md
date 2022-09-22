@@ -26,21 +26,21 @@ Before we can start using Terraform to manage an AWS infrastructure, we need to 
 
 ### IAM user
 
-As an AWS best-practice, create an IAM user with *programmatic access* and the following *policies* attached to them via Identity and Access Management (IAM) in the AWS console:
+Terraform needs a user with privileges to manage AWS objects. For this demo, create an (Identity and Access Management) IAM user with *programmatic access* and the following *policies* attached to it:
 
 - NetworkAdministrator
 - AmazonEC2FullAccess
 - AmazonS3FullAccess
 
-If you have not created an IAM user before, [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) is a useful guide you can use. At the end of the IAM user creation process, you should be presented with the following page showing the access key ID and the secret access key. Copy these values and save them somewhere (private) because we will be using them at a later step.
+Of course, IAM provides more granular control for users, and the 3 above are just for the purposes of this demo.
 
-For this tutorial, I have created a user called `terraform-user`.
+If you have not created an IAM user before, [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) is a useful guide you can use. At the end of the IAM user creation process, you should be presented with a page with the access key ID and the secret access key. Copy these values and save them somewhere (private) because we will be using them at a later step. For this tutorial, I have created a user called `terraform-user`.
 
-**Remember**: always keep these credentials **confidential**!
+**Remember**: In production environments, properly plan the IAM roles and policies attached to the terraform user.
 
 ### S3 Bucket
 
-Create an S3 Bucket which will hold our `terraform.tfstate` file. Terraform state files are explained in a later step in this guide.
+Create an S3 Bucket which will hold our `terraform.tfstate` file. Terraform state files are explained at a later step in this guide.
 
 If you have not created an S3 bucket before, [here](https://medium.com/swlh/how-to-manage-your-aws-infrastructure-with-terraform-3581b631fd9d#:~:text=S3%20bucket%20before%2C-,here,-is%20a%20useful) is a useful guide you can use. For this tutorial, I have created an S3 bucket called `terraform-s3-bucket-testing`:
 
@@ -96,9 +96,9 @@ which terraform
 If `/usr/local/bin/terraform` is displayed in the output, then we’re all set! Run this last command to check the Terraform version:
 
 ```bash
-santino:terraform-aws santino$ terraform - version
+lester:terraform-aws lester$ terraform - version
 Terraform v0.12.29
-santino:terraform-aws santino$
+lester:terraform-aws lester$
 ```
 
 ## Terraform state
@@ -123,7 +123,7 @@ Create our first `.tf` file using your favorite editor, which will contain detai
 
 #### provider.tf
 
-```
+```tf
 # Define AWS as our provider
 provider "aws" {
      region        = "eu-central-1"
@@ -150,7 +150,7 @@ After defining our provider, the location of our S3 bucket, and the login creden
 Here is a sample output:
 
 ```bash
-santino:terraform-aws santino$ terraform init
+lester:terraform-aws lester$ terraform init
 Initializing the backend...
 Successfully configured the backend "s3"! Terraform will automatically
 use this backend unless the backend configuration changes.
@@ -171,7 +171,7 @@ should now work.
 If you ever set or change modules or backend configuration for Terraform,
 rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
-santino:terraform-aws santino$
+lester:terraform-aws lester$
 ```
 
 *Read part 2 [here](https://www.pidnull.io/2022/09/22/How-to-Manage-Your-AWS-Infrastructure-With-Terraform-Part2.html)*
