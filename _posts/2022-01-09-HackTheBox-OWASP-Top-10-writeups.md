@@ -6,11 +6,13 @@ tags:
   - web
 ---
 
-URL: <https://app.hackthebox.com/tracks/OWASP-Top-10>
+The [OWASP Top 10 Track](https://app.hackthebox.com/tracks/OWASP-Top-10) is a collection of web challenges that HTB users can follow to get hands-on experience in exploiting the most critical security risks to web applications.
 
-Description: *Get hands-on experience in exploiting the most critical security risks to web applications.*
+## Quick disclaimer
 
-## Index
+My writeups are intended to showcase my understanding of various security concepts and my thought process when solving a problem. Hopefully they would also improve my technical-writing skills, which I believe is an extremely underrated skill in the security industry. I also share some analysis of vulnerabilites and sometimes what can be done to resolve or mitigate them. These are not intended to be tutorials or expert guides.
+
+## Status
 
 |Difficulty|Challenge|Status|Category|
 |--------|----------|----------|----------|
@@ -24,8 +26,6 @@ Description: *Get hands-on experience in exploiting the most critical security r
 |Easy|[Full Stack Conf](#full-stack-conf)|||
 |Easy|[baby website rick](#baby-website-rick)|||
 |Easy|[baby breaking grad](#baby-breaking-grad)|||
-
----
 
 ## looking glass
 
@@ -152,8 +152,6 @@ function runTest($test, $ip_address)
     }
     ```
 
----
-
 ## sanitize
 
 Description: *Can you escape the query context and log in as admin at my super secure login page?*
@@ -208,8 +206,6 @@ Output:
 ### Remark
 
 - **SQL Injection**: [This](https://www.php.net/manual/en/security.database.sql-injection.php) is one guide on how to help prevent SQL injection in PHP. Other modern web frameworks have also their own set of libraries and best practices to prevent SQL injection.
-
----
 
 ## baby auth
 
@@ -335,8 +331,6 @@ Result:
 
 - **Broken Access Control**: Although the application has a working login and registration functionality, the implementation of session management, which in this case is through the session cookie `PHPSESSID`, is weak enough that tampering with the cookie allows a malicious user to escalate privileges to another valid user such as `admin`.
 - **Recommendation**: The application should replace the session management with one that could detect and prevent tampering with, such as JWT.
-
----
 
 ## baby nginxatsu
 
@@ -737,28 +731,14 @@ Worked!
 **Recommendation**: All endpoints must use the same access control as much as possible.
 2. **Sensitive Data Exposure**: Database dump of the application is stored in `/storage` containing password hashes and API tokens. **Recommendation**: Even if this endpoint were authenticated, the database dump should not have been stored where the application data is stored. If there was a valid need for it to be stored there, there should be enough file protections on it, such as file encryption or storing it in a password protected archive.
 
----
-
 ## baby WAFfiles order
-
----
 
 ## baby todo or not todo
 
----
-
 ## baby BoneChewerCon
-
----
 
 ## baby Stack Conf
 
----
-
 ## baby website rick
 
----
-
 ## baby breaking grad
-
----

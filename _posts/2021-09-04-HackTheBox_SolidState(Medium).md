@@ -10,7 +10,7 @@ TL;DR: HackTheBox's SolidState machine is a medium-difficulty machine that serve
 
 ## Quick disclaimer
 
-My writeups are intended to showcase my understanding of various security concepts and my thought process when solving a problem. Hopefully they would also improve my technical-writing skills, which I believe is an extremely underrated skill in our industry. I also share some analysis of vulnerabilites and sometimes what can be done to resolve or mitigate them. These are not intended to be tutorials or walkthroughs.
+My writeups are intended to showcase my understanding of various security concepts and my thought process when solving a problem. Hopefully they would also improve my technical-writing skills, which I believe is an extremely underrated skill in the security industry. I also share some analysis of vulnerabilites and sometimes what can be done to resolve or mitigate them. These are not intended to be tutorials or expert guides.
 
 ---
 
