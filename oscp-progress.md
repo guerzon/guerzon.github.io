@@ -34,7 +34,7 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 |Beep|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/5)||
 |Sense|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.com/achievement/machine/429896/111)|Credentials leak<br/>pfSense CVE: authenticated RCE via command injection|
 |Valentine|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/127)||
-|Sunday|Easy|![](assets/images/tux.png)|||
+|Sunday|Easy|![](assets/images/solaris.png)|[Completed](https://www.hackthebox.com/achievement/machine/429896/136)|Finger,Password Policy<br/>Misconfiguration|
 |Irked|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/163)||
 |Friendzone|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/173)||
 |Legacy|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/2)||
