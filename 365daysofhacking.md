@@ -81,3 +81,5 @@ Welcome to my journal for my #365daysofhacking journey, a trend in the infosec c
 - Day: 24
   - Darknet Diaries ep. 40, 41, 42 - great stories from physical pentesters and social engineers.
   - HackTheBox - Active Directory 101: Completed machine [Sauna](https://www.hackthebox.eu/achievement/machine/429896/229) - ASREPRoast, DCSync
+- Day: 25
+  - HackTheBox - Active Directory 101: Completed machine [Active](https://www.hackthebox.eu/achievement/machine/429896/148) - Groups.xml, Kerberoasting
