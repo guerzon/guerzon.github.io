@@ -32,7 +32,7 @@ Are you interested with my OSCP journey? Here is my study progress.
 |Active|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/148)|Groups.xml, Kerberoasting|
 |Blackfield|Hard|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/255)|ASREPRoas, Dumping LSASS and NTDS.dit,Password spraying, SeBackup and SeRestore privilege abuse|
 |Resolute|Medium|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/220)|Active Directory, LDAP anonymous bind, PowerShell Transcription logging, DnsAdmins privileged group abuse|
-|Reel|Hard|![](assets/images/windows.ico)|||
+|Reel|Hard|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/143)|Active Directory, Service misconfiguration (FTP, SMTP), Client-side attacks (Office), Permissions abuse, sensitive information leak|
 |Sizzle|Insane|![](assets/images/windows.ico)|||
 |Mantis|Hard|![](assets/images/windows.ico)|||
 |Cascade|Medium|![](assets/images/windows.ico)|||
