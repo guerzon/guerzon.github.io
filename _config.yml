@@ -31,15 +31,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:lesterguerzon@proton.me"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/pidnull"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/guerzon"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/lesterguerzon"
 
 # Defaults
 defaults:
