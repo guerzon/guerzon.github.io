@@ -25,7 +25,7 @@ We start with the network. We have to create a few network objects:
 
 #### vpc.tf
 
-```
+```tf
 ## Demo VPC
 resource "aws_vpc" "terraform-demo-vpc" {
      cidr_block              = "10.0.0.0/16"
@@ -41,7 +41,7 @@ resource "aws_vpc" "terraform-demo-vpc" {
 
 #### subnets.tf
 
-```
+```tf
 ## Demo subnets
 # Web tier subnet
 resource "aws_subnet" "terraform-demo-snet-web" {
@@ -77,7 +77,7 @@ resource "aws_subnet" "terraform-demo-snet-db" {
 
 #### igw.tf
 
-```
+```tf
 ## Internet Gateway
 resource "aws_internet_gateway" "terraform-demo-igw" {
      vpc_id = aws_vpc.terraform-demo-vpc.id
@@ -89,7 +89,7 @@ resource "aws_internet_gateway" "terraform-demo-igw" {
 
 #### route-table.tf
 
-```
+```tf
 ## Route table
 resource "aws_route_table" "terraform-demo-rtable" {
      vpc_id = aws_vpc.terraform-demo-vpc.id
@@ -120,7 +120,7 @@ resource "aws_route_table_association" "terraform-demo-rtassoc3" {
 
 Notice that the syntax for defining a resource is as follows:
 
-```
+```tf
  resource "<resource type>" "<resource name>"
 ```
 
@@ -128,7 +128,7 @@ We can then refer to this resource when creating other resources using the `<res
 
 For example, we defined our VPC as:
 
-```
+```tf
 ## Demo VPC
 resource "aws_vpc" "terraform-demo-vpc" {
 ...
@@ -136,7 +136,7 @@ resource "aws_vpc" "terraform-demo-vpc" {
 
 When creating a subnet, we need to assocate it with the VPC where it should be located in. Thus, we define this association with the `vpc_id` parameter and the ID of the VPC:
 
-```
+```tf
 resource "aws_subnet" "terraform-demo-snet-web" {
      vpc_id                  = aws_vpc.terraform-demo-vpc.id
 ...
@@ -149,7 +149,7 @@ Use the `terraform plan` command to review the changes that Terraform would perf
 Sample output:
 
 ```bash
-santino:terraform-aws santino$ terraform plan
+lester:terraform-aws lester$ terraform plan
 Refreshing Terraform state in-memory prior to plan...
 The refreshed state will be used to calculate this plan, but will not be
 persisted to local or remote state storage.
@@ -197,7 +197,7 @@ Plan: 9 to add, 0 to change, 0 to destroy.
 Note: You didn't specify an "-out" parameter to save this plan, so Terraform
 can't guarantee that exactly these actions will be performed if
 "terraform apply" is subsequently run.
-santino:terraform-aws santino$
+lester:terraform-aws lester$
 ```
 
 Since we are creating objects from scratch, the output of the `terraform plan` command shows that it would create 9 objects (1 VPC, 3 subnets, 1 internet gateway, 1 route table, and 3 route table associations).
@@ -207,7 +207,7 @@ To finally create the objects in AWS, run the `terraform apply` command. You wil
 Sample output:
 
 ```bash
-santino:terraform-aws santino$ terraform apply
+lester:terraform-aws lester$ terraform apply
 An execution plan has been generated and is shown below.
 Resource actions are indicated with the following symbols:
   + create
@@ -270,7 +270,7 @@ aws_route_table_association.terraform-demo-rtassoc1: Creation complete after 1s 
 aws_route_table_association.terraform-demo-rtassoc2: Creation complete after 1s [id=rtbassoc-04e0a5bdcddd03f22]
 aws_route_table_association.terraform-demo-rtassoc3: Creation complete after 1s [id=rtbassoc-0daec5cb8a9545d2a]
 Apply complete! Resources: 9 added, 0 changed, 0 destroyed.
-santino:terraform-aws santino$
+lester:terraform-aws lester$
 ```
 
 You can now login to the AWS console to verify the objects created. Here is how my dashboard now looks like:
@@ -295,7 +295,7 @@ First, let us define 3 security groups:
 
 #### secgroups.tf
 
-```
+```tf
 ## Security groups
 # Web tier security group
 resource "aws_security_group" "terraform-demo-secgrp-webpub" {
@@ -398,7 +398,7 @@ Again, run the same `terraform plan` command earlier and review the proposed cha
 Sample output:
 
 ```bash
-santino:terraform-aws santino$ terraform apply
+lester:terraform-aws lester$ terraform apply
 aws_vpc.terraform-demo-vpc: Refreshing state... [id=vpc-03ae143c2a8e3284c]
 <CUT>
 aws_route_table_association.terraform-demo-rtassoc3: Refreshing state... [id=rtbassoc-0daec5cb8a9545d2a]
@@ -475,7 +475,7 @@ aws_security_group.terraform-demo-secgrp-app: Creation complete after 2s [id=sg-
 aws_security_group.terraform-demo-secgrp-webpub: Creation complete after 2s [id=sg-029d4f9c83b6fed54]
 aws_security_group.terraform-demo-secgrp-db: Creation complete after 2s [id=sg-049704a710b385483]
 Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
-santino:terraform-aws santino$
+lester:terraform-aws lester$
 ```
 
 ### Server definitions
@@ -505,11 +505,11 @@ data "aws_ami" "centos7" {
     }
 }
 ## SSH Key pair
-resource "aws_key_pair" "terraform-demo-sshkey-santino" {
-    key_name   = "terraform-demo-sshkey-santino"
+resource "aws_key_pair" "terraform-demo-sshkey-lester" {
+    key_name   = "terraform-demo-sshkey-lester"
     public_key = file("~/.ssh/id_rsa.pub")
         tags = {
-             Name = "terraform-demo-sshkey-santino"
+             Name = "terraform-demo-sshkey-lester"
         }
 }
 ### Server definitions
@@ -517,7 +517,7 @@ resource "aws_key_pair" "terraform-demo-sshkey-santino" {
 resource "aws_instance" "terraform-demo-web" {
   ami                    = data.aws_ami.centos7.id
   instance_type          = "t2.micro"
-  key_name               = aws_key_pair.terraform-demo-sshkey-santino.key_name
+  key_name               = aws_key_pair.terraform-demo-sshkey-lester.key_name
   subnet_id              = aws_subnet.terraform-demo-snet-web.id
   vpc_security_group_ids = [aws_security_group.terraform-demo-secgrp-webpub.id]
         tags = {
@@ -528,7 +528,7 @@ resource "aws_instance" "terraform-demo-web" {
 resource "aws_instance" "terraform-demo-app" {
   ami                    = data.aws_ami.centos7.id
   instance_type          = "t2.micro"
-  key_name               = aws_key_pair.terraform-demo-sshkey-santino.key_name
+  key_name               = aws_key_pair.terraform-demo-sshkey-lester.key_name
   subnet_id              = aws_subnet.terraform-demo-snet-app.id
   vpc_security_group_ids = [aws_security_group.terraform-demo-secgrp-app.id]
         tags = {
@@ -539,7 +539,7 @@ resource "aws_instance" "terraform-demo-app" {
 resource "aws_instance" "terraform-demo-postgres" {
   ami                    = data.aws_ami.centos7.id
   instance_type          = "t3a.medium"
-  key_name               = aws_key_pair.terraform-demo-sshkey-santino.key_name
+  key_name               = aws_key_pair.terraform-demo-sshkey-lester.key_name
   subnet_id              = aws_subnet.terraform-demo-snet-db.id
   vpc_security_group_ids = [aws_security_group.terraform-demo-secgrp-db.id]
         tags = {
@@ -550,7 +550,7 @@ resource "aws_instance" "terraform-demo-postgres" {
 resource "aws_instance" "terraform-demo-mysql" {
   ami                    = data.aws_ami.centos7.id
   instance_type          = "t3a.medium"
-  key_name               = aws_key_pair.terraform-demo-sshkey-santino.key_name
+  key_name               = aws_key_pair.terraform-demo-sshkey-lester.key_name
   subnet_id              = aws_subnet.terraform-demo-snet-db.id
   vpc_security_group_ids = [aws_security_group.terraform-demo-secgrp-db.id]
         tags = {
@@ -562,7 +562,7 @@ resource "aws_instance" "terraform-demo-mysql" {
 Again, run the same `terraform plan` command earlier and review the proposed changes, then `terraform apply` and respond with `yes` to the prompt.
 
 ```bash
-santino:terraform-aws santino$ terraform apply
+lester:terraform-aws lester$ terraform apply
 data.aws_ami.centos7: Refreshing state...
 aws_vpc.terraform-demo-vpc: Refreshing state... [id=vpc-03ae143c2a8e3284c]
 aws_subnet.terraform-demo-snet-app: Refreshing state... [id=subnet-0b6474b59034abcb0]
@@ -596,7 +596,7 @@ Terraform will perform the following actions:
       + instance_type                = "t2.micro"
       + ipv6_address_count           = (known after apply)
       + ipv6_addresses               = (known after apply)
-      + key_name                     = "terraform-demo-sshkey-santino"
+      + key_name                     = "terraform-demo-sshkey-lester"
       + network_interface_id         = (known after apply)
       + outpost_arn                  = (known after apply)
       + password_data                = (known after apply)
@@ -666,7 +666,7 @@ aws_instance.terraform-demo-app: Creation complete after 22s [id=i-01363d0b335a4
 aws_instance.terraform-demo-web: Still creating... [30s elapsed]
 aws_instance.terraform-demo-web: Creation complete after 32s [id=i-059f9773402b1eb34]
 Apply complete! Resources: 7 added, 0 changed, 0destroyed.
-santino:terraform-aws santino$
+lester:terraform-aws lester$
 ```
 
 Login to the EC2 Dashboard and navigate to Instances to verify the servers created:
