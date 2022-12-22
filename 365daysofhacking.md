@@ -61,5 +61,9 @@ Welcome to my journal for my #365daysofhacking journey, a trend in the infosec c
   - Darknet Diaries ep. 13: [Carna Botnet](https://darknetdiaries.com/episode/13/)
 - Day: 19
   - Darknet Diaries ep. 24: [Operation Bayonet](https://darknetdiaries.com/episode/24/)
-  - Darknet Diaries ep. 29: [Stuxnet](https://darknetdiaries.com/episode/29/)
+  - Darknet Diaries ep. 29: [Stuxnet](https://darknetdiaries.com/episode/29/), story of the popular malware with 4 0-days that targeted Iran's nuclear program and was attributed to US and Israel.
   - 15-213 Introduction to Computer Systems - Lecture 2: Bits, Bytes, and Integers Part 2
+- Day: 20
+  - Darknet Diaries ep. 30: [Schmoon](https://darknetdiaries.com/episode/30/), story of the Schmoon virus used in the 2012 hack against Saudi Aramco.
+  - Darknet Diaries ep. 33: [RockYou](https://darknetdiaries.com/episode/33/), story of where `rockyou.txt` came from!
+  - Discovering [Phrack](http://phrack.org/issues/70/1.html)
