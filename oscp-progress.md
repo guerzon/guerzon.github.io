@@ -5,6 +5,8 @@ author_profile: true
 permalink: /oscp-progress
 ---
 
+<img src="assets/images/PWK-OSCP-badge.png" width="200" height="200" />
+
 Are you interested with my OSCP journey? Below, I share my study progress.
 
 ## PEN-200 | Penetration Testing with Kali Linux materials
