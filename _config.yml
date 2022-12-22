@@ -1,0 +1,62 @@
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "dark"
+title: pidnull
+email: me@pidnull.io
+description: >-
+  Pentesting, application security, reverse engineering,
+  and HackTheBox and CTF writeups by a hacker wannabe.
+baseurl: ""
+url: "https://pidnull.io"
+locale: "en-US"
+title: "pidnull"
+title_separator: "-"
+search: true
+twitter_username: pidnull
+github_username: guerzon
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-seo-tag
+
+# Author
+author:
+  name: "Lester Guerzon"
+  avatar: "/assets/images/pidnull-avatar.png"
+  bio: "linux sysadmin • wannabe hacker"
+  location: "Munich"
+  links:
+    - label: "HomePage"
+      url: "https://pidnull.io"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/guerzon"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/pidnull"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/ilesterg/"
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      related: true
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
