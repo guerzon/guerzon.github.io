@@ -7,4 +7,4 @@ author_profile: true
 
 #### Current Goals
 
-- **OSCP**: I'm currently working on my OSCP and am planning to take the exam on the 5th week of 2022. Follow my progress [here](/oscp-progress). Also check out my [penetration testing notes](https://github.com/guerzon/Pentesting).
+- **OSCP**: I'm currently working on my OSCP and am planning to take the exam on the 5th week of 2022.
