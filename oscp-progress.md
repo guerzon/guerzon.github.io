@@ -40,7 +40,7 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 |Legacy|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/2)||
 |Blue|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/51)||
 |Devel|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/3)|Writeable open FTP share, IIS/ASP<br/>SeImpersonate->JuicyPotato|
-|Optimum|Easy|![](assets/images/windows.ico)|||
+|Optimum|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/6)|Rejetto HttpFIleServer RCE<br/>MS16-098|
 |Granny|Easy|![](assets/images/windows.ico)|||
 |Arctic|Easy|![](assets/images/windows.ico)|||
 |Grandpa|Easy|![](assets/images/windows.ico)|||
