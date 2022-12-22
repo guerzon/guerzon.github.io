@@ -4,6 +4,7 @@ date: 2022-09-22
 layout: single
 tags:
   - IaC
+  - Terraform
 ---
 
 *This is a republish from my Medium blog, with minor revisions. Read my original single-page article [here](https://medium.com/swlh/how-to-manage-your-aws-infrastructure-with-terraform-3581b631fd9d), published 28.07.2020.*

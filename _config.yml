@@ -2,7 +2,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark"
 email: lesterguerzon@proton.me
 description: >-
-  Linux, cloud, Infrastructure-as-Code, and security ramblings or a recovering sysadmin.
+  Linux, cloud, Infrastructure-as-Code, and security ramblings or a recovering sysadmin. SRE wannabe.
 baseurl: ""
 url: "https://pidnull.io"
 locale: "en-US"
@@ -25,7 +25,7 @@ plugins:
 author:
   name: "Lester Guerzon"
   avatar: "/assets/images/pidnull-avatar.png"
-  bio: "linux sysadmin who loves books, languages, and cycling"
+  bio: "linux sysadmin who loves books, languages, and cycling. SRE wannabe."
   location: "Munich"
   links:
     - label: "Email"
@@ -37,9 +37,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/guerzon"
-    - label: "HackTheBox"
-      icon: "fas fa-fw fa-cube"
-      url: "https://app.hackthebox.eu/profile/429896"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/lesterguerzon"
