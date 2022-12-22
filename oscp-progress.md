@@ -35,7 +35,7 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 |Reel|Hard|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/143)|Active Directory, Service misconfiguration (FTP, SMTP), Client-side attacks (Office), Permissions abuse, sensitive information leak|
 |Sizzle|Insane|![](assets/images/windows.ico)|||
 |Mantis|Hard|![](assets/images/windows.ico)|||
-|Cascade|Medium|![](assets/images/windows.ico)|||
+|Cascade|Medium|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/235)|Active Directory, LDAP Enumeration, SQLite databases, RE .NET Assemblies, TightVNC Password Extraction, AES Encryption, AD Recycle Bin|
 |Multimaster|Insane|![](assets/images/windows.ico)|||
 
 ---
