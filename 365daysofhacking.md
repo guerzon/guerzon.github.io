@@ -85,3 +85,7 @@ Welcome to my journal for my #365daysofhacking journey, a trend in the infosec c
   - HackTheBox - Active Directory 101: Completed machine [Active](https://www.hackthebox.eu/achievement/machine/429896/148) - AD, Groups.xml, Kerberoasting
 - Day: 26
   - HackTheBox - Active Directory 101: Completed machine [Blackfield](https://www.hackthebox.eu/achievement/machine/429896/255) - AD, ASREPRoast, Dumping LSASS and NTDS.dit, Password spraying, SeBackup/SeRestore privilege abuse
+- Day: 27
+  - Network pivoting with SSH: local and remote port forwarding, [SOCKS5 and proxychains4](https://theyhack.me/Proxychains-Double-Pivoting/).
+  - Darknet Diaries ep. 53 [Shadow Brokers](https://darknetdiaries.com/episode/53/) and 54 [NotPetya](https://darknetdiaries.com/episode/54/).
+  - HackTheBox - Active Directory 101: Completed machine [Resolute](https://www.hackthebox.eu/achievement/machine/429896/220) - Active Directory, LDAP anonymous bind, PowerShell Transcription logging, DnsAdmins privileged group abuse
