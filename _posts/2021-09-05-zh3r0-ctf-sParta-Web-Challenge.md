@@ -11,11 +11,15 @@ tags:
 ---
 TL;DR: The challenge had an archive file which contained the source code for a NodeJS application and a Dockerfile. Running docker build invokes npm commands, which revealed a clue which led to finding out the application was vulnerable to insecure deseralization. The malicious input was sent via a cookie called "guest" which led into an RCE and the eventual capture of the challenge's flag.
 
+## Quick disclaimer
+
+My writeups are intended to showcase my understanding of various security concepts and my thought process when solving a problem. Hopefully they would also improve my technical-writing skills, which I believe is an extremely underrated skill in our industry. I also share some analysis of vulnerabilites and sometimes what can be done to resolve or mitigate them. These are not intended to be tutorials or walkthroughs.
+
+---
+
 ## Challenge file
 
-zh3r0 CTF was the 2nd CTF I participated with, and "sParta" was a Web challenge and was the only  one I was able to solve :(
-
-For this challenge, there was a downloadable archive containing a NodeJS project. Let's start by extracting the archive and looking at the contents:
+[zh3r0 CTF](https://ctftime.org/event/1285/) was the 2nd CTF I participated with, and "sParta" was a Web challenge and included a downloadable archive containing a NodeJS project. Let's start by extracting the archive and looking at the contents:
 
 ```bash
 pidnull💀kali:public$ tree
@@ -150,6 +154,8 @@ The following lines easily caught my eyes:
 > 
 > Some issues need review, and may require choosing
 > a different dependency.
+
+[npm audit](https://docs.npmjs.com/cli/v7/commands/npm-audit) is a handy tool to quickly identify known vulnerabilities for the packages in an NPM project. In the past, I have used it for a few projects and used to integrate it to build pipelines.
 
 I started the application and ran an npm audit:
 
