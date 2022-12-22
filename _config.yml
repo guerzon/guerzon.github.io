@@ -46,6 +46,9 @@ author:
     - label: "HackTheBox"
       icon: "fas fa-fw fa-cube"
       url: "https://app.hackthebox.eu/profile/429896"
+    - label: "CTFtime"
+      icon: "fas fa-flag"
+      url: "https://ctftime.org/team/155982"
 
 # Defaults
 defaults:
