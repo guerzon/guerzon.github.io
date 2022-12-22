@@ -19,8 +19,6 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 
 ## [In progress] HackTheBox - OSCP-like machines
 
-**Description**: Here is the status of my progress in completing the OSCP-like machines (new list) from [@TJ_Null](https://twitter.com/tj_null/status/1162419643283333120).
-
 **Timeline**: October 2021 - December 2021
 
 **Status**
@@ -57,9 +55,18 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 |Kotarak|Hard|![](assets/images/tux.png)|||
 |Conceal|Hard|![](assets/images/windows.ico)|||
 |Brainfuck|Insane|![](assets/images/tux.png)|||
+|Additional - AD|
+|Active|Easy|![](assets/images/windows.ico)|||
+|Forest|Easy|![](assets/images/windows.ico)|||
+|Fuse|Medium|![](assets/images/windows.ico)|||
+|Cascade|Medium|![](assets/images/windows.ico)|||
+|Monteverde|Medium|![](assets/images/windows.ico)|||
+|Resolute|Medium|![](assets/images/windows.ico)|||
+|Arkham|Medium|![](assets/images/windows.ico)|||
+|Mantis|Hard|![](assets/images/windows.ico)|||
+|APT|Insane|![](assets/images/windows.ico)|||
 |Additional machines|
 |Netmon|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/177)||
-|Active|Easy|![](assets/images/windows.ico)|||
 |LaCasaDePapel|Easy|![](assets/images/windows.ico)|||
 |Jeeves|Medium|![](assets/images/windows.ico)|||
 |Bart|Medium|![](assets/images/windows.ico)|||
@@ -81,8 +88,6 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 ---
 
 ## [Planned] PEN-200 - Penetration Testing with Kali Linux Labs
-
-**Description**: Below is my progress on the PWK Labs.
 
 **Timeline**: Resume on January 2022
 
@@ -110,32 +115,3 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 |[TBD]|
 
 ---
-
-## HackTheBox - Dante Pro Lab
-
-### Description
-
-> Dante is a modern and beginner-friendly Pro Lab that provides the opportunity to learn common penetration testing methodologies and gain familiarity with tools included in the Parrot OS Linux distribution.
-
-**Timeline**: December 2021
-
-**Status**
-
-|Machine|Platform|Status|
-|---|---|---|
-|DANTE-FW01|||
-|DANTE-ADMIN-DC02|||
-|DANTE-ADMIN-NIX05|||
-|DANTE-ADMIN-NIX06|||
-|DANTE-DC01|||
-|DANTE-NIX02|||
-|DANTE-NIX03|||
-|DANTE-NIX04|||
-|DANTE-NIX07|||
-|DANTE-SQL01|||
-|DANTE-WS01|||
-|DANTE-WS02|||
-|DANTE-WS03|||
-|DANTE-WEB-NIX01|||
-
-___
