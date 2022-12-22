@@ -30,10 +30,13 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:lesterguerzon@proton.me"
+      url: "mailto:guerzon@proton.me"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/guerzon"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/guerzonlester/"
 
 # Defaults
 defaults:
