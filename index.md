@@ -7,7 +7,7 @@ author_profile: true
 
 ---
 
-Follow my progress for my [OSCP](/goal-oscp) goal.
+Follow the progress of my [OSCP](/oscp-progress) goal.
 
 ---
 
