@@ -25,14 +25,14 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 
 **Status**
 
-|Machine|Difficulty|Platform|Status|Tags|
+|Machine|Difficulty|Platform|Status|Keywords|
 |---|---|---|---|---|
 |Lame|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/1)||
 |Shocker|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/108)||
 |Bashed|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/118)||
 |Nibbles|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/121)||
 |Beep|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/5)||
-|Sense|Easy|![](assets/images/tux.png)|||
+|Sense|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.com/achievement/machine/429896/111)|Credentials leak<br/>pfSense CVE: authenticated RCE via command injection|
 |Valentine|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/127)||
 |Sunday|Easy|![](assets/images/tux.png)|||
 |Irked|Easy|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/163)||
