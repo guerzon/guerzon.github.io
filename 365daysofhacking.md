@@ -7,6 +7,11 @@ permalink: /365daysofhacking
 
 Welcome to my journal for my #365daysofhacking journey, a trend in the infosec community where one tries to learn something new or perform a security task for 365 days.
 
+- Day: 32
+  - HackTheBox - Completed machine [Horizontall](https://www.hackthebox.eu/achievement/machine/429896/374)
+  - HackTheBox - Completed machine [Explore](https://www.hackthebox.eu/achievement/machine/429896/356)
+- Day: 31
+  - HackTheBox - Machine Horizontall part 1
 - Day: 30
   - HackTheBox - Completed machine [Previse](https://www.hackthebox.eu/achievement/machine/429896/373)
 - Day: 29
