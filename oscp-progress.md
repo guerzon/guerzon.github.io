@@ -44,7 +44,7 @@ This is my penetration testing study tracker for my OSCP exam planned for Februa
 |Granny|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/14)|WebDAV, outdated software<br/>Token Kidnapping|
 |Arctic|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/9)|Adobe ColdFusion 8, arbitrary file upload, outdated software<br/>JuicyPotato|
 |Grandpa|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/13)|WebDAV, outdated software, Token Kidnapping|
-|Bounty|Easy|![](assets/images/windows.ico)|||
+|Bounty|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.com/achievement/machine/429896/142)|ASP.Net, IIS, Web misconfiguration, outdated software<br/>JuicyPotato|
 |Jerry|Easy|![](assets/images/windows.ico)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/144)||
 |Cronos|Medium|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/11)||
 |Niniveh|Medium|![](assets/images/tux.png)|[Completed](https://www.hackthebox.eu/achievement/machine/429896/54)||
