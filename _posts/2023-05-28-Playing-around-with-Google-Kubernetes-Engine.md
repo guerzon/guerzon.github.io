@@ -1,5 +1,5 @@
 ---
-title: "Playing around Google Kubernetes Engine"
+title: "Playing around with Google Kubernetes Engine"
 date: 2023-05-28
 layout: single
 tags:
@@ -8,9 +8,7 @@ tags:
   - Google Cloud Platform
 ---
 
-So I have been brushing up on my Kubernetes skills lately, and I figured I would share some of the things I have been playing on.
-
-In this post, I documented how I set up a [GKE](https://cloud.google.com/kubernetes-engine) cluster and deployed a demo application called "microblog".
+I have been playing around with Kubernetes and Google Kubernetes Engine lately, and I figured why not share some of my notes on my blog. With that, in this post, I documented how I set up a [GKE](https://cloud.google.com/kubernetes-engine) cluster, installed some useful tools and automations, and then deployed a demo application called "microblog".
 
 ## Prerequisites
 
@@ -22,17 +20,19 @@ gcloud auth login
 gcloud config set project $PROJECT_ID
 ```
 
-I am using my subdomain `cloud.sreafterhours.com` in this documentation.
+I am using my subdomain `cloud.sreafterhours.com` in this documentation, which is delegated to [Cloud DNS](https://cloud.google.com/dns):
+
+![](/assets/images/2023-05-28/1.png)
 
 ## Certificate management
 
 I prefer automating certificate management for relatively-small projects. This saves a lot of management overhead, and allows users (i.e. developers) to freely use certificates on the ingresses they deploy.
 
-In this exercise, I am using [cert-manager](https://cert-manager.io/docs/) and Let's Encrypt.
+In this exercise, I am using [cert-manager](https://cert-manager.io/docs/) and [Let's Encrypt](https://letsencrypt.org/) ACME issuer.
 
 ### DNS challenge
 
-There are a few ways to resolve the challenge for verifying domain ownership, but considering that I use Cloud DNS for the domains anyway, I would just use [Cloud DNS challenge](https://cert-manager.io/docs/configuration/acme/dns01/google/).
+When creating a certificate signing request, you typically have to prove ownership to the domain(s) you are creating a certificate for. There are a few ways to resolve the challenge for verifying domain ownership, but considering that I use Cloud DNS for the domains anyway, I would just use [Cloud DNS challenge](https://cert-manager.io/docs/configuration/acme/dns01/google/).
 
 Create a service account that will be used by cert-manager to solve the DNS challenge:
 
@@ -128,7 +128,7 @@ spec:
 
 ## Google Kubernetes Engine
 
-Create a small 1-node cluster with machine type `e2-standard-4` (4 vCPUs, 8 GB memory). I am creating it in an existing manual-mode VPC. Also enable [Dataplane v2](https://cloud.google.com/kubernetes-engine/docs/concepts/dataplane-v2), because eBPF [FTW!](https://ebpf.io/what-is-ebpf/).
+Create a small 1-node cluster with machine type `e2-standard-4` (4 vCPUs, 8 GB memory). I am creating it in an existing manual-mode VPC. Also enable [Dataplane v2](https://cloud.google.com/kubernetes-engine/docs/concepts/dataplane-v2), because [eBPF]](https://ebpf.io/what-is-ebpf/) FTW!
 
 ```bash
 gcloud beta container clusters create demolopolis \
@@ -144,6 +144,10 @@ gcloud beta container clusters create demolopolis \
 ```
 
 Notice that the `HttpLoadBalancing` addon was not included, because in the next section we will configure [ingress-nginx](https://github.com/kubernetes/ingress-nginx) instead.
+
+Result:
+
+![](/assets/images/2023-05-28/2.png)
 
 Configure `kubectl`:
 
@@ -187,7 +191,7 @@ EOF
 
 ### Prometheus and Grafana
 
-Grab the manifests from the GitHub repo. Here is a cute trick to not clutter your local machine:
+Prometheus management can get complicated sometimes. I would simplify this by using the Prometheus Operator instead. Here is a cute trick for grabbing the manifests from the GitHub repo while trying not to clutter your local machine:
 
 ```bash
 mkdir ./work
@@ -216,6 +220,7 @@ kubectl wait \
 
 kubectl apply -f ./work/manifests/
 
+# verify:
 kubectl -n monitoring get pods
 ```
 
@@ -227,10 +232,9 @@ kubectl -n monitoring port-forward --address 0.0.0.0 svc/grafana 3000:3000
 
 Grafana should be available at <http://127.0.0.1:3000>.
 
-The `kube-prometheus` manifests include network policies which will restrict ingress access to pods, so we need to define network policies to allow our ingress (and tools) to reach the Prometheus and Grafana pods:
+The `kube-prometheus` manifests include network policies which will restrict ingress access to pods, so we need to define network policies to allow our ingress controller (and tools) to reach the Prometheus and Grafana pods:
 
 ```bash
-## Grafana
 cat <<EOF | kubectl apply -f -
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
@@ -297,14 +301,12 @@ spec:
 EOF
 ```
 
-Quick check to make sure the we properly formatted our ingress rules:
+Example commands to verify that we properly formatted our ingress rules:
 
 ```bash
 ## verify that the rules have been created properly:
-kubectl -n monitoring get networkpolicy allow-ingress-to-grafana -o jsonpath='{.spec.ingress[0].from[0]}' | jq ## first source
-kubectl -n monitoring get networkpolicy allow-ingress-to-grafana -o jsonpath='{.spec.ingress[0].from[1]}' | jq ## second source
-kubectl -n monitoring get networkpolicy allow-ingress-to-prometheus -o jsonpath='{.spec.ingress[0].from[0]}' | jq ## first source
-kubectl -n monitoring get networkpolicy allow-ingress-to-prometheus -o jsonpath='{.spec.ingress[0].from[1]}' | jq ## second source
+kubectl -n monitoring get networkpolicy allow-ingress-to-grafana -o jsonpath='{.spec.ingress[0].from[0]}' | jq
+kubectl -n monitoring get networkpolicy allow-ingress-to-grafana -o jsonpath='{.spec.ingress[0].from[1]}' | jq
 ````
 
 Test with netshoot:
@@ -334,6 +336,8 @@ spec:
   - prometheus.cloud.sreafterhours.com
 EOF
 ```
+
+This would use the first entry as the canonical name, and of course the entries under `dnsNames` would be added as the [cert SAN](https://knowledge.digicert.com/solution/SO9440.html).
 
 Create a single ingress resource for Grafana and Prometheus, and route to corresponding backend using the CNI in the request:
 
@@ -386,7 +390,9 @@ EOF
 Create the A records in Cloud DNS:
 
 ```bash
+# grab the external IP address associated with the LB resource:
 EXT_IP=$(kubectl -n monitoring get ing monitoring -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+
 gcloud dns record-sets create grafana.cloud.sreafterhours.com. \
   --zone="cloud-sreafterhours-com" --type="A" --ttl="300" \
   --rrdatas="${EXT_IP}"
@@ -402,6 +408,14 @@ curl https://grafana.cloud.sreafterhours.com/ -I
 curl https://prometheus.cloud.sreafterhours.com/ -I
 ```
 
+Grafana:
+
+![](/assets/images/2023-05-28/3.png)
+
+Prometheus:
+
+![](/assets/images/2023-05-28/4.png)
+
 ## Application
 
 ### Background
@@ -412,7 +426,7 @@ The application is called "microblog" and was used by [Miguel Griberg](https://g
 
 Create the Docker Artifact Registry. For this demo, I created:
 
-```europe-west3-docker.pkg.dev/<PROJECT_ID>/demolopolis```
+`europe-west3-docker.pkg.dev/<PROJECT_ID>/demolopolis`
 
 The application already had a `Dockerfile`, but there was an issue with the dependencies and I had opinions on a few things, so I recreated it as follows:
 
@@ -582,7 +596,7 @@ spec:
 EOF
 ```
 
-The ingress resource is annotated to allow only our public IP address. This is a quick and easy-to-add layer of security to our application while testing.
+You might have noticed that the ingress resources were annotated to allow only our public IP address. This is a quick and easy-to-add layer of security to our application while testing. A user coming from another source IP address would get a `403 Forbidden` error:
 
 Wait for the certificate to be signed and the Load-Balancer to allocate a public IP address:
 
@@ -593,6 +607,7 @@ kubectl -n microblog get cert,ing
 Create the A record in Cloud DNS:
 
 ```bash
+# grab the external IP address associated with the LB resource:
 EXT_IP=$(kubectl -n microblog get ing microblog -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 gcloud dns record-sets create microblog.cloud.sreafterhours.com. \
@@ -601,6 +616,8 @@ gcloud dns record-sets create microblog.cloud.sreafterhours.com. \
 ```
 
 Application is now available at <https://microblog.cloud.sreafterhours.com>.
+
+![](/assets/images/2023-05-28/5.png)
 
 ## Cleanup
 
