@@ -4,6 +4,7 @@ description: >-
   k8s, cloud, golang, and security ramblings or a recovering sysadmin. SRE wannabe.
 domain: blog.pidnull.io
 url: "https://pidnull.io"
+repository: guerzon/blog.pidnull.io
 locale: "en-US"
 title: "pidnull.io"
 title_separator: "-"
