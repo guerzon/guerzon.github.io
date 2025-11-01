@@ -9,7 +9,7 @@ tags:
 
 *This is a republish from my Medium blog, with minor revisions. Read my original single-page article [here](https://medium.com/swlh/how-to-manage-your-aws-infrastructure-with-terraform-3581b631fd9d), published 28.07.2020.*
 
-[Read part 1 [here](https://www.pidnull.io/2022/09/21/How-to-Manage-Your-AWS-Infrastructure-With-Terraform-Part1.html)]
+[Read part 1 [here](https://guerzon.net/2022/09/21/How-to-Manage-Your-AWS-Infrastructure-With-Terraform-Part1.html)]
 
 ## VPC
 

@@ -175,6 +175,6 @@ commands will detect it and remind you to do so if necessary.
 lester:terraform-aws lester$
 ```
 
-*Read part 2 [here](https://www.pidnull.io/2022/09/22/How-to-Manage-Your-AWS-Infrastructure-With-Terraform-Part2.html)*
+*Read part 2 [here](https://guerzon.net/2022/09/22/How-to-Manage-Your-AWS-Infrastructure-With-Terraform-Part2.html)*
 
 ---
